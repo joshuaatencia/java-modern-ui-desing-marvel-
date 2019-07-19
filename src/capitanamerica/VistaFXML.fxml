@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="764.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="capitanamerica.VistaFXMLController">
+   <children>
+      <Pane fx:id="pMenu" layoutY="-1.0" prefHeight="503.0" prefWidth="457.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER" layoutX="50.0" prefHeight="52.0" prefWidth="407.0" spacing="20.0">
+               <children>
+                  <Label id="menu" fx:id="menu" styleClass="menu" text="Menu" textAlignment="CENTER" textFill="#6f6f6f">
+                     <font>
+                        <Font name="Roboto Regular" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+                  <Label id="blog" fx:id="blog" styleClass="blog" text="Blog" textAlignment="CENTER" textFill="#6f6f6f">
+                     <font>
+                        <Font name="Roboto Regular" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+                  <Label text="Personajes" textAlignment="CENTER">
+                     <font>
+                        <Font name="Roboto Regular" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+                  <Label id="contacto" fx:id="contacto" styleClass="contacto" text="Contacto" textAlignment="CENTER" textFill="#6f6f6f">
+                     <font>
+                        <Font name="Roboto Regular" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Label>
+                  <Label id="salir" fx:id="salir" onMouseClicked="#label" text="X">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Roboto Regular" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox fx:id="pSteve" layoutX="89.0" layoutY="78.0" prefHeight="425.0" prefWidth="270.0">
+               <children>
+                  <Label prefHeight="118.0" prefWidth="270.0" text="Capitán América" textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font name="Roboto Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="91.0" prefWidth="270.0" text="Capitán América cuyo nombre real es Steven Grant Rogers, es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics." textAlignment="JUSTIFY" wrapText="true" />
+                  <ImageView fitHeight="142.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/meme-capitan-america.jpg" />
+                     </image></ImageView>
+                  <HBox prefHeight="41.0" prefWidth="270.0" spacing="10.0">
+                     <children>
+                        <Label text="Capitan" underline="true">
+                           <font>
+                              <Font name="Roboto Italic" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text="Marvel" underline="true">
+                           <font>
+                              <Font name="Roboto Italic" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="10.0" text="Movie" underline="true">
+                           <font>
+                              <Font name="Roboto Italic" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="pBucky" layoutX="89.0" layoutY="78.0" opacity="0.0" prefHeight="425.0" prefWidth="270.0" visible="false">
+               <children>
+                  <Label prefHeight="85.0" prefWidth="270.0" text="Bucky Barnes" textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font name="Roboto Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="91.0" prefWidth="270.0" text="James Buchanan &quot;Bucky&quot; Barnes es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics." textAlignment="JUSTIFY" wrapText="true" />
+                  <ImageView fitHeight="142.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/buckyy.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="41.0" prefWidth="270.0" spacing="10.0">
+                     <children>
+                        <Label text="Bucky" underline="true">
+                           <font>
+                              <Font name="Roboto Italic" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text="Movie" underline="true">
+                           <font>
+                              <Font name="Roboto Italic" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="10.0" text="Action" underline="true">
+                           <font>
+                              <Font name="Roboto Italic" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></Pane>
+      <Pane fx:id="iconomenu" prefHeight="52.0" prefWidth="50.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fx:id="iconmenu" fitHeight="20.0" fitWidth="18.0" layoutX="16.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_menu_filled_100px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+         </children>
+      </Pane>
+      <Line fx:id="lhorisontal" endX="100.0" layoutX="187.0" layoutY="52.0" startX="-100.0" />
+      <Line fx:id="lvertical" endX="100.0" layoutX="51.0" layoutY="224.0" rotate="90.0" startX="-100.0" />
+      <Circle fx:id="cCircle" fill="DODGERBLUE" layoutX="559.0" layoutY="155.0" radius="69.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Label layoutX="481.0" layoutY="243.0" text="JOSUE DAVID RUIZ ATENCIA">
+         <font>
+            <Font name="Roboto Bold" size="12.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="instagram" ellipsisString="" layoutX="481.0" layoutY="313.0" text="Instagram">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_instagram_new_96px.png" />
+               </image>
+            </ImageView>
+         </graphic></Hyperlink>
+      <Hyperlink fx:id="linkedin" ellipsisString="" layoutX="481.0" layoutY="279.0" text="Linkedin">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_linkedin_96px.png" />
+               </image>
+            </ImageView>
+         </graphic></Hyperlink>
+      <Hyperlink fx:id="github" layoutX="481.0" layoutY="350.0" text="Github">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8_github_2_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <Pane fx:id="pImagen" layoutX="458.0" layoutY="-2.0" prefHeight="512.0" prefWidth="307.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fx:id="ivFondo" fitHeight="512.0" fitWidth="312.0" opacity="0.39" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/fondo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivSteve" fitHeight="503.0" fitWidth="363.0" layoutX="-41.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/steve.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ivBucky" fitHeight="738.0" fitWidth="407.0" layoutX="-50.0" layoutY="-4.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../img/bucky.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="173.0" layoutY="441.0" prefHeight="67.0" prefWidth="139.0">
+               <children>
+                  <HBox alignment="BOTTOM_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="67.0" prefWidth="136.0">
+                     <children>
+                        <Pane id="isquierda" fx:id="ivIsquierda" opacity="0.9" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1976D2;" styleClass="isquierda">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="10.0">
+                                 <image>
+                                    <Image url="@../img/icons8_back_100px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </children></Pane>
+                        <Pane id="derecha" fx:id="ivDerecha" opacity="0.9" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1976D2;" styleClass="derecha">
+                           <children>
+                              <Line endX="100.0" layoutX="-66.0" layoutY="34.0" rotate="90.0" startX="33.0" strokeWidth="1.2" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="10.0">
+                                 <image>
+                                    <Image url="@../img/icons8_forward_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </children></Pane>
+                     </children></HBox>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Pane layoutX="243.0" opacity="0.81" prefHeight="116.0" prefWidth="68.0" style="-fx-background-color: #111230;">
+               <children>
+                  <VBox layoutX="-5.0" layoutY="-1.0" prefHeight="116.0" prefWidth="80.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView id="mensaje" fx:id="mensaje" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" styleClass="mensaje" x="25.0" y="20.0">
+                                 <image>
+                                    <Image url="@../img/icons8_message_60px.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView id="buscar" fx:id="buscar" fitHeight="20.0" fitWidth="20.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" styleClass="buscar" x="28.0" y="15.0">
+                                 <image>
+                                    <Image url="@../img/icons8_search_52px.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0000007e" height="326.0" layoutX="243.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="68.0" />
+            <Pane fx:id="pBoton" layoutX="-30.0" layoutY="101.0" onMouseClicked="#Clicked" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="15.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8_delete_sign_filled_100px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
